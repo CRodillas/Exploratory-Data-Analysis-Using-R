@@ -7,18 +7,6 @@ Rodillas
 library(ggplot2)
 library(dplyr)
 ```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
 ``` r
 cytof_data <- read.csv("E:/Downloads/cytof_one_experiment.csv")
 #1.Using the CD69 column
