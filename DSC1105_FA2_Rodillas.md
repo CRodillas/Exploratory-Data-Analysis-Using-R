@@ -8,33 +8,8 @@ Rodillas
 ``` r
 library(ggplot2)
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(tidyverse)
 ```
-
-    ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-    ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
-    ## ✔ lubridate 1.9.4     ✔ tibble    3.2.1
-    ## ✔ purrr     1.0.2     ✔ tidyr     1.3.1
-    ## ✔ readr     2.1.5
-
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-    ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
 ``` r
 cytof_data <- read.csv("E:/Downloads/cytof_one_experiment.csv")
