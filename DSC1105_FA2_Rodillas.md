@@ -5,6 +5,8 @@ Rodillas
 
 ## Cytof Data
 
+For the first set of questions, we will look again at the CyTOF data Download CyTOF data. Each row in the dataset represents a cell, and each column in the dataset represents a protein, and the value is element i, j of the dataset represents the amount of protein j in cell i.
+
 ``` r
 library(ggplot2)
 library(dplyr)
@@ -91,6 +93,8 @@ expression levels relatively show more variation, which are common in
 data such as these.
 
 ## Gymnastics Data
+
+Next, for more practice pivoting, we will look at a dataset from dcldata. 
 
 ``` r
 library(dcldata)
