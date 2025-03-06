@@ -8,20 +8,6 @@ Rodillas
 ``` r
 library(ggplot2)
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(tidyr)
 
 mortality_df <- read.csv("E:/Downloads/mortality_by_latitude.csv")
