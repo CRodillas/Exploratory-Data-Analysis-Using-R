@@ -65,6 +65,7 @@ ggplot(sales_data, aes(x=sales_count))+
 ```
 
 ![](DSC1105_FA5_Rodillas_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
 **Figure 1.** Distrubution of Sales Count
 
 Figure 1 shows the distribution of sales count based on each frequency.
@@ -108,6 +109,7 @@ ggplot(sales_data, aes(x = promo_holiday)) +
 ```
 
 ![](DSC1105_FA5_Rodillas_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
 **Figure 3.** Proportion of Days with Promo and Holiday
 
 Figure 3 visualizes the proportion of whether a day is a Holiday, a
