@@ -216,7 +216,7 @@ head(cs_data_OH)
     ## 5                                1
     ## 6                                0
 
-Using the one hot encoded dataset
+Using the one hot encoded dataset,
 
 ``` r
 cs_data_OH$Gender_Label <- ifelse(cs_data_OH$Gender == "Male", 1, 0)
@@ -407,8 +407,9 @@ All in all, the model provides a reasonable understanding of how
 demographic and purchase behavior features influence customer
 segmentation.
 
-Looking at the Residual Deviance, it shows a value at 18492.06, which is
-not usually concerning, but only shows a moderate fit for the model.
+Looking at the **Residual Deviance**, it shows a value at **18492.06**, which is
+not usually concerning, but only shows a moderate fit for the model. In addition, 
+the **AIC** values at **18529.58**
 
 Using glmnet for regularization,
 
@@ -511,15 +512,15 @@ Precision, Recall, and F1-score by Class
 
 Looking at the values for each of the Precision, Recall, and F1-score,
 it shows a struggle to provide substantial predictions each class. Even
-with the highest precision, the model only predicts at about 36% for the
-budget shoppers, and only having 10% of them completely identified, with
-that, it is reasonable reason why the F1 is sub 20%. In addition,
-although the regular shopper has a lower precision at 33.7%, it still
-makes up for the identification of actual regular shopper at 90.7%. This
+with the highest precision, the model only predicts at about **36%** for the
+**budget shoppers**, and only having 10% of them completely identified, with
+that, it is reasonable reason why the **F1 is sub 20%**. In addition,
+although the **regular shopper** has a lower precision at **33.7%**, it still
+makes up for the **identification of actual regular shopper** at **90.7%**. This
 means that the modelstrongly favors predicting Regular Shoppers. It
 identifies most of them, but its precision is relatively low, indicating
-it’s also over-predicting this class. On the other hand, the model
-completely ignored premium shoppers.
+it’s also over-predicting this class. On the other hand, the **model
+completely ignored premium shoppers**.
 
 ## Refinement
 
@@ -671,10 +672,10 @@ print(confusion)
     ## Balanced Accuracy                    0.4883
 
 Looking at the accuracy, although it has been subjected to interaction
-features, it still has a subpar 33% accuracy on a 95% confidence
-interval. Looking at the prediction, it seems like all three classes are
-confused with each other, indicating that the model has difficulty
-distinguishing between the customer segments. With this much accuracy,
+features, it still has a subpar **33% accuracy on a 95% confidence
+interval**. Looking at the prediction, it seems like all three classes are
+confused with each other, indicating that the **model has difficulty
+distinguishing between the customer segments**. With this much accuracy,
 it shows at the threshold of 33.54% of No Information Rate (NIR). In
 addition, the Kappa indicates that the model is performing worse than
 chance in terms of agreement beyond random prediction.
@@ -702,8 +703,8 @@ were made.
 
 Even though interaction features was incorporated, the model only
 achieved a subpar 32.59% accuracy on the test data, which falls just
-below the No Information Rate (33.54%) and within the 95% confidence
-interval of random chance.After looking at the confusion matrix, it was
+below the **No Information Rate (33.54%)** and within the 95% confidence
+interval of random chance. After looking at the confusion matrix, it was
 revealed that there is a high level of misclassification among the
 segments, and the model struggled to distinguish between the three
 groups.
